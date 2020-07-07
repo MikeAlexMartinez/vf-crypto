@@ -1,4 +1,5 @@
-const { isAfter, add } = require('date-fns')
+const { isAfter, add } = require('date-fns');
+const logger = require('../logger');
 
 function supportedCurrencies() {
   return [
@@ -25,8 +26,10 @@ function coinListCache() {
       const currencyCache = cache[currency];
       const hasExpired = isAfter(new Date(), currencyCache.expires);
       if (hasExpired) {
+        logger.info(`Cache expired for currency ${currency}`);
         return next();
       } else {
+        logger.info(`Cache used for currency ${currency}`);
         return res.json({
           status: 'OK',
           source: 'cache',
@@ -35,7 +38,7 @@ function coinListCache() {
         });
       }
     } catch (e) {
-      console.error(e);
+      logger.error(e);
       return res.json({
         status: 'ERROR',
         data: null,
@@ -52,6 +55,8 @@ function coinListCache() {
       expires,
       data
     };
+
+    logger.info(`Updated cache for ${currency} with expiry at ${expires}`);
     return;
   }
 
