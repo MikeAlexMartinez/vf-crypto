@@ -1,0 +1,142 @@
+module.exports.expectedGeneralListings = [
+  {
+    "id": 1,
+    "logo": 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
+    "rank": 1,
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "slug": "bitcoin",
+    "circulatingSupply": 17906012,
+    "totalSupply": 17906012,
+    "lastUpdated": "2019-08-30T18:51:28.000Z",
+    "quotes": {
+      "GBP": {
+        "price": 7868.246041357151,
+        "marketCap": 140888908035.49365,
+        "volume24h": 11301161206.170357,
+        "percentChange24h": 0.3289,
+        "lastUpdated": "2019-08-30T18:51:02.000Z",
+      },
+      "USD": {
+        "price": 9558.55163723,
+        "marketCap": 171155540318.86005,
+        "volume24h": 13728947008.2722,
+        "percentChange24h": 0.328918,
+        "lastUpdated": "2019-08-30T18:51:28.000Z",
+      },
+    },
+  },
+  {
+    "id": 1027,
+    "logo": 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
+    "rank": 2,
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "slug": "ethereum",
+    "circulatingSupply": 107537936.374,
+    "totalSupply": 107537936.374,
+    "lastUpdated": "2019-08-30T18:51:21.000Z",
+    "quotes": {
+      "GBP": {
+        "price": 138.85824164986371,
+        "marketCap": 14932528755.548561,
+        "volume24h": 4753209740.410369,
+        "percentChange24h": -0.5108,
+        "lastUpdated": "2019-08-30T18:51:02.000Z",
+      },
+      "USD": {
+        "price": 168.688633539,
+        "marketCap": 18140427540.533985,
+        "volume24h": 5774323846.44399,
+        "percentChange24h": -0.510765,
+        "lastUpdated": "2019-08-30T18:51:21.000Z",
+      },
+    },
+  },
+];
+
+module.exports.listingsLatestResponse = {
+  "status": {
+    "timestamp": "2020-07-04T14:53:19.509Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 8,
+    "credit_count": 1,
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "slug": "bitcoin",
+      "num_market_pairs": 7919,
+      "date_added": "2013-04-28T00:00:00.000Z",
+      "tags": [
+          "mineable"
+      ],
+      "max_supply": 21000000,
+      "circulating_supply": 17906012,
+      "total_supply": 17906012,
+      "platform": null,
+      "cmc_rank": 1,
+      "last_updated": "2019-08-30T18:51:28.000Z",
+      "quote": {
+        "GBP": {
+          "price": 7868.246041357151,
+          "volume_24h": 11301161206.170357,
+          "percent_change_1h": -0.1273,
+          "percent_change_24h": 0.3289,
+          "percent_change_7d": -8.0058,
+          "market_cap": 140888908035.49365,
+          "last_updated": "2019-08-30T18:51:02.000Z",
+        },
+        "USD": {
+          "price": 9558.55163723,
+          "volume_24h": 13728947008.2722,
+          "percent_change_1h": -0.127291,
+          "percent_change_24h": 0.328918,
+          "percent_change_7d": -8.00576,
+          "market_cap": 171155540318.86005,
+          "last_updated": "2019-08-30T18:51:28.000Z",
+        },
+      },
+    },
+    {
+      "id": 1027,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "slug": "ethereum",
+      "num_market_pairs": 5629,
+      "date_added": "2015-08-07T00:00:00.000Z",
+      "tags": [
+          "mineable"
+      ],
+      "max_supply": null,
+      "circulating_supply": 107537936.374,
+      "total_supply": 107537936.374,
+      "platform": null,
+      "cmc_rank": 2,
+      "last_updated": "2019-08-30T18:51:21.000Z",
+      "quote": {
+        "GBP": {
+          "price": 138.85824164986371,
+          "volume_24h": 4753209740.410369,
+          "percent_change_1h": -0.033,
+          "percent_change_24h": -0.5108,
+          "percent_change_7d": -13.1883,
+          "market_cap": 14932528755.548561,
+          "last_updated": "2019-08-30T18:51:02.000Z",
+        },
+        "USD": {
+          "price": 168.688633539,
+          "volume_24h": 5774323846.44399,
+          "percent_change_1h": -0.0330049,
+          "percent_change_24h": -0.510765,
+          "percent_change_7d": -13.1883,
+          "market_cap": 18140427540.533985,
+          "last_updated": "2019-08-30T18:51:21.000Z",
+        },
+      },
+    },
+  ],
+};
