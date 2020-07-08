@@ -1,7 +1,5 @@
 # VF Crypto
 
-VF Crypto is my implementation for a technical interview at The Virtual Forge.
-
 ## Implementation Details
 
 I've written a few different sections explaining my decisions and what I might change in the provided project.
