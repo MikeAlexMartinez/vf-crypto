@@ -6,7 +6,7 @@ VF Crypto is my implementation for a technical interview at The Virtual Forge.
 
 I've written a few different sections explaining my decisions and what I might change in the provided project.
 - [General](#general)
-- [Fronten](#frontend)
+- [Frontend](#frontend)
 - [Backend](#backend)
 - [Testing](#testing)
 - [What Next](#what-next)
@@ -15,6 +15,7 @@ I've written a few different sections explaining my decisions and what I might c
 
 To run locally you should add the following environment variables
 to a .env file:
+
 ```
 # Or use the pro-api
 COINMARKETCAP_API=https://sandbox-api.coinmarketcap.com/v1
@@ -25,7 +26,9 @@ REACT_APP_CORE_API=api
 REACT_APP_API_VERSION=v1
 ```
 
-To run locally you need to start both the server:
+To run locally you need to, install and start both the server:
+
+`npm i`
 
 `npm run dev:server`
 
