@@ -5,7 +5,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout';
 import Home from './views/Home/HomeView';
 import Coin from './views/Coin/CoinView';
-import NotFound from './views/NotFound';
 
 const AppRoutes = () => (
   <BrowserRouter>
@@ -13,7 +12,7 @@ const AppRoutes = () => (
       <Switch>
         <Route path="/" exact children={<Home />} />
         <Route path="/coin/:coinName" exact children={<Coin />} />
-        <Route path="*" children={<NotFound />} />
+        <Route path="*" children={<Coin />} />
       </Switch>
     </Layout>
   </BrowserRouter>
