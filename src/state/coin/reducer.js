@@ -4,7 +4,7 @@ export const initialState = {
   coin: '',
 }
 
-export const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case CONSTANTS.SELECT_COIN: {

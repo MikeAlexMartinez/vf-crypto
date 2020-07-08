@@ -4,16 +4,17 @@ function usePolling(callback, delay = 1000 * 60, deps) {
   const savedCallback = useRef();
 
   useEffect(() => {
-    callback(...deps);
     savedCallback.current = callback;
   });
 
   useEffect(() => {
-    function tick() {
+    // Call immediately then return tick function
+    // to run on subsequent requests
+    let id = setInterval(function tick() {
       savedCallback.current(...deps);
-    }
+      return tick;
+    }(), delay);
 
-    let id = setInterval(tick, delay);
     return () => clearInterval(id);
   }, [delay, deps]);
 }

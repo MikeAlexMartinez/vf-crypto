@@ -30,9 +30,9 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "dev:server": "nodemon server/index.js",
+    "dev:client": "react-scripts start",
     "test:server": "jest",
     "start": "node server/index.js",
-    "dev:start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -54,7 +54,10 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^3.3.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "nodemon": "^2.0.4",
     "redux-devtools-extension": "^2.13.8"
   }
